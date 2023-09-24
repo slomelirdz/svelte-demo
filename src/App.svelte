@@ -70,16 +70,16 @@
 <main>
   <div class="card">
     <h1 class="title">Svelte Demo <IconBrandSvelte size={50}/></h1>
-    <p>Created by <a href={'https://www.sandralomeli.com'} target="_blank">Sandra Lomeli</a>.</p>
+    <p>Created by <a href="https://www.sandralomeli.com" target="_blank">Sandra Lomeli</a>.</p>
     <code>
       Hi! This is my first project in Svelte. I created it using Vite, choosing Svelte and JavaScript as my stack.
       <br/>Other resources and packages I've used include:
       <br/>
       <br/>- Sass as the css processor.
-      <br/>- JSONplaceholder, endpoint to simulate the behavior of a real API (<a href="https://jsonplaceholder.typicode.com/">https://jsonplaceholder.typicode.com/</a>).
-      <br/>- AutoAnimate for transition animations (<a href="https://auto-animate.formkit.com/">https://auto-animate.formkit.com/</a>).
-      <br/>- TablerICONS for iconography (<a href="https://tabler-icons.io/">https://tabler-icons.io/</a>).
-      <br/>- Css-loaders for loader animation (<a href="https://css-loaders.com/">https://css-loaders.com/</a>).
+      <br/>- JSONplaceholder, endpoint to simulate the behavior of a real API (<a href="https://jsonplaceholder.typicode.com/" target="_blank">https://jsonplaceholder.typicode.com/</a>).
+      <br/>- AutoAnimate for transition animations (<a href="https://auto-animate.formkit.com/" target="_blank">https://auto-animate.formkit.com/</a>).
+      <br/>- TablerICONS for iconography (<a href="https://tabler-icons.io/" target="_blank">https://tabler-icons.io/</a>).
+      <br/>- Css-loaders for loader animation (<a href="https://css-loaders.com/" target="_blank">https://css-loaders.com/</a>).
       <br/>- Installed the Svelte extension for VS Code.
     </code>
   </div>
