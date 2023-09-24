@@ -34,7 +34,7 @@
   };
 
   const removeComment = (target) => {
-    comments = comments.filter((tag) => target !== tag);
+    comments = comments.filter((comment) => target !== comment);
   }
 
   const addTag = (e) => {
@@ -49,6 +49,20 @@
     tags = tags.filter((tag) => target !== tag);
   }
 
+  const moveUp = (index) => {
+    if (index) {
+      comments.splice(index - 1, 0, ...comments.splice(index, 1));
+      comments = comments;
+    }
+  }
+
+  const moveDown = (index) => {
+    if (index < comments.length - 1) {
+      comments.splice(index + 1, 0, ...comments.splice(index, 1));
+      comments = comments;
+    }
+  }
+
   // Sets isDarkTheme as a reactive variable
   $: isDarkTheme, handleThemeMode();
 </script>
@@ -56,7 +70,7 @@
 <main>
   <div class="card">
     <h1 class="title">Svelte Demo <IconBrandSvelte size={50}/></h1>
-    <p>Created by Sandra Lomeli.</p>
+    <p>Created by <a href={'https://www.sandralomeli.com'} target="_blank">Sandra Lomeli</a>.</p>
     <code>
       Hi! This is my first project in Svelte. I created it using Vite, choosing Svelte and JavaScript as my stack.
       <br/>Other resources and packages I've used include:
@@ -104,17 +118,17 @@
     <h2>List Rendering</h2>
     <p>Remove items from the list and rearrange them by moving them up and down.</p>
     <ul class="comments" use:autoAnimate>
-      {#each comments as comment}
+      {#each comments as comment, index}
         <li class="item">
           <span class="name">{comment.name}</span>
           <br/>
           <span class="email">{comment.email}</span>
           <p class="body">{comment.body}</p>
           <div class="controls">
-            <button class="button-icon" on:click={() => removeComment(comment)}>
+            <button class="button-icon" on:click={() => moveUp(index)}>
               <IconChevronUp color={primaryColor}/>
             </button>
-            <button class="button-icon" on:click={() => removeComment(comment)}>
+            <button class="button-icon" on:click={() => moveDown(index)}>
               <IconChevronDown color={primaryColor}/>
             </button>
             <button class="button-icon" on:click={() => removeComment(comment)}>
