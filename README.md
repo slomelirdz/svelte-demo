@@ -16,3 +16,5 @@ Other resources and packages I've used include:
 
 - Run `npm install`
 - Run `npm run dev`
+  
+![Screenshot 2023-09-24 at 4 02 56 PM](https://github.com/slomelirdz/svelte-demo/assets/92738879/a3bd7ae2-129f-4c32-b002-b674c778fbcf)
