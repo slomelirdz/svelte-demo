@@ -180,6 +180,7 @@
 
   .tags {
     display: flex;
+    flex-wrap: wrap;
 
     .item {
       align-items: center;
@@ -187,6 +188,7 @@
       border-radius: 1.5em;
       color: #fff;
       display: flex;
+      margin-bottom: 1em;
       padding: 0 .75em;
 
       .button-icon {
